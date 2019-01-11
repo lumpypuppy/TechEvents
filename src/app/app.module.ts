@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, ActivatedRouteSnapshot } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { 
   EventListComponent, 
@@ -21,6 +22,8 @@ import {
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   declarations: [
